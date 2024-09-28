@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "b8174283-d084-4487-8617-58180a4aa108",
+		"name": "Error-Messages-codes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30467112"
+	},
+	"item": [
+		{
+			"name": "Error-Messages",
+			"item": [
+				{
+					"name": "http://localhost:8080/errors/status/200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/errors/status/200",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"errors",
+								"status",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/errors/66f8169576cab16b3edbd1f7",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"errorMessage\":\"UNPROCESSABLE_ENTITY!!!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/errors/66f8169576cab16b3edbd1f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"errors",
+								"66f8169576cab16b3edbd1f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/errors/66f8169576cab16b3edbd1f7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/errors/66f8169576cab16b3edbd1f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"errors",
+								"66f8169576cab16b3edbd1f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/errors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/errors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"errors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/errors",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"statusCode\": 504,\r\n  \"errorMessage\": \"GATEWAY_TIMEOUT\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/errors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"errors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
